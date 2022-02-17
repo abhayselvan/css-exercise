@@ -17,7 +17,7 @@ code {
   background-color: black;
   justify-content: center;
   align-items: center;
-  min-height: 400px;
+  min-height: 360px;
 }
 
 .header-container {
@@ -40,7 +40,7 @@ code {
   text-transform: uppercase;
   grid-area: header-title;
   font-weight: 100;
-  font-size: 77px;
+  font-size: 5em;
   margin: -10px;
   padding: 0px;
 }
@@ -58,6 +58,9 @@ code {
   font-size: 0.8em;
   line-height: 1.5em;
   grid-area: header-text;
+  max-width: 300px;
+  margin: 10px;
+  padding: 0px;
 }
 
 #header-btn {
@@ -158,6 +161,7 @@ code {
 .item-body {
   justify-self: left;
   margin: 10px 20px 0px 20px;
+  font-size: 0.8em;
   background-color: #561f5e;
   color: gainsboro;
   grid-area: item-body;
@@ -166,6 +170,7 @@ code {
 .item-date {
   justify-self: right;
   margin: 10px 20px 20px 20px;
+  font-size: 0.8em;
   background-color: #561f5e;
   color: white;
   grid-area: item-date;
@@ -240,5 +245,9 @@ code {
   #header-img {
     margin-top: 10px;
     justify-self: center;
+  }
+
+  #header-title {
+    font-size: 3.2em;
   }
 }
