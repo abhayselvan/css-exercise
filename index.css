@@ -24,7 +24,6 @@ code {
   display: grid;
   background-color: black;
   max-width: 700px;
-  min-width: 300px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -59,8 +58,6 @@ code {
   font-size: 0.8em;
   line-height: 1.5em;
   grid-area: header-text;
-  margin: 0px;
-  padding: 0px;
 }
 
 #header-btn {
@@ -73,7 +70,7 @@ code {
   border-radius: 10px;
   grid-area: header-btn;
   justify-self: center;
-  margin: 0px;
+  margin: -10px;
   padding: 0px;
 }
 
@@ -90,7 +87,6 @@ code {
   grid-gap: 30px;
   background-color: #710d80;
   max-width: 1200px;
-  min-width: 300px;
   justify-content: center;
   align-items: center;
   grid-template-columns: 1fr 1fr;
