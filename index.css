@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.header-section {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.header-container {
+  display: grid;
+  background-color: black;
+  max-width: 700px;
+  min-width: 300px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.75fr 1fr 0.75fr;
+  grid-template-areas:
+    "header-img header-title"
+    "header-img header-text"
+    "header-img header-btn";
+}
+
+#header-title {
+  color: white;
+  text-transform: uppercase;
+  grid-area: header-title;
+  font-weight: 100;
+  font-size: 77px;
+  margin: -10px;
+  padding: 0px;
+}
+
+#header-img {
+  max-width: 300px;
+  max-height: 200px;
+  border: 8px solid white;
+  border-radius: 5%;
+  grid-area: header-img;
+}
+
+#header-text {
+  color: white;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  grid-area: header-text;
+  margin: 0px;
+  padding: 0px;
+}
+
+#header-btn {
+  color: mistyrose;
+  background-color: #f53e6e;
+  width: 100px;
+  height: 35px;
+  border: 2px none;
+  font-size: 0.8em;
+  border-radius: 10px;
+  grid-area: header-btn;
+  justify-self: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.body-section {
+  background-color: #710d80;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-container {
+  margin: 20px;
+  display: grid;
+  grid-gap: 30px;
+  background-color: #710d80;
+  max-width: 1200px;
+  min-width: 300px;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 0.2fr;
+  grid-template-areas:
+    "body-title body-title"
+    "item1 item2"
+    "item3 item4"
+    "item5 item6"
+    "item7 item8"
+    "body-btn body-btn";
+}
+
+.body-title {
+  max-height: 50px;
+  font-weight: 250;
+  font-size: 2em;
+  justify-self: center;
+  margin-bottom: -5px;
+  color: white;
+  grid-area: body-title;
+}
+
+.body-btn {
+  width: 120px;
+  height: 35px;
+  border: 2px none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  grid-area: body-btn;
+  justify-self: center;
+}
+
+.item {
+  display: grid;
+  border-radius: 20px;
+  background: linear-gradient(90deg, white 24%, #561f5e 0%);
+  grid-template-columns: 0.25fr 1fr;
+  grid-template-rows: 0.25fr 0.5fr 0.25fr;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas:
+    "body-img item-title"
+    "body-img item-body"
+    "body-img item-date";
+}
+
+.item-title {
+  justify-self: left;
+  margin: 10px 20px 0px 20px;
+  background-color: #561f5e;
+  color: white;
+  text-transform: capitalize;
+  font-weight: bold;
+  grid-area: item-title;
+}
+
+.item-body {
+  justify-self: left;
+  margin: 10px 20px 0px 20px;
+  background-color: #561f5e;
+  color: gainsboro;
+  grid-area: item-body;
+}
+
+.item-date {
+  justify-self: right;
+  margin: 10px 20px 20px 20px;
+  background-color: #561f5e;
+  color: white;
+  grid-area: item-date;
+}
+
+.item1 {
+  grid-area: item1;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
+.item3 {
+  grid-area: item3;
+}
+
+.item4 {
+  grid-area: item4;
+}
+
+.item5 {
+  grid-area: item5;
+}
+
+.item6 {
+  grid-area: item6;
+}
+
+.item7 {
+  grid-area: item7;
+}
+
+.item8 {
+  grid-area: item8;
+}
+
+.body-img {
+  width: 100px;
+  height: 100px;
+  grid-area: body-img;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+@media (max-width: 900px) {
+  .header-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.75fr 2fr 1fr 0.75fr;
+    grid-template-areas:
+      "header-title"
+      "header-img"
+      "header-text"
+      "header-btn";
+  }
+
+  .body-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
+    grid-template-areas:
+      "body-title"
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5"
+      "item6"
+      "item7"
+      "item8"
+      "body-btn";
+  }
+
+  #header-img {
+    margin-top: 10px;
+    justify-self: center;
+  }
+
+  .body-img {
+    margin: 10px;
+  }
+}

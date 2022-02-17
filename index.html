@@ -1,124 +1,140 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Exercise</title>
-    <meta name="description" content="A simple HTML page">
-<style>
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-</style>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <!-- The rest of your HTML code is here -->
-<body>
-	<section>
-		<div>
-			<h1>My app</h1>
-			<img src="https://i.pinimg.com/564x/ab/5b/1d/ab5b1d9c1bb06519c965dc87bffb0e5a.jpg" alt="header rocket" />
-			<p>
-				Lorem ipsum is placeholder text commonly used in the graphic, print,
-				and publishing industries for previewing layouts and visual mockups.
-			</p>
-			<button>Test Now</button>
-		</div>
-	</section>
+  <body>
+    <section class="header-section">
+      <div class="header-container">
+        <h1 id="header-title">My app</h1>
+        <img
+          id="header-img"
+          src="https://i.pinimg.com/564x/ab/5b/1d/ab5b1d9c1bb06519c965dc87bffb0e5a.jpg"
+          alt="header rocket"
+        />
+        <p id="header-text">
+          Lorem ipsum is placeholder text commonly used in the graphic, print,
+          and publishing industries for previewing layouts and visual mockups.
+        </p>
+        <button id="header-btn">Test Now</button>
+      </div>
+    </section>
 
-	<section>
-		<div>
-			<h2>My List</h2>
-			<ul>
-				<li>
-					<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" />
-					<p>my first thing</p>
-					<p>
-						Lorem ipsum is placeholder text commonly used in the graphic,
-						print, and publishing industries for previewing layouts and
-						visual mockups.
-					</p>
-					<p>01/01/2020</p>
-				</li>
-				<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" />
-				<p>my second thing</p>
-				<p>
-					Lorem ipsum is placeholder text commonly used in the graphic,
-					print, and publishing industries for previewing layouts and
-					visual mockups.
-				</p>
-				<p>01/01/2020</p>
-				</li>
-				<li>
-					<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" />
-					<p>my first thing</p>
-					<p>
-						Lorem ipsum is placeholder text commonly used in the graphic,
-						print, and publishing industries for previewing layouts and
-						visual mockups.
-					</p>
-					<p>01/01/2020</p>
-				</li>
-				<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" />
-				<p>my second thing</p>
-				<p>
-					Lorem ipsum is placeholder text commonly used in the graphic,
-					print, and publishing industries for previewing layouts and
-					visual mockups.
-				</p>
-				<p>01/01/2020</p>
-				</li>
-				<li>
-					<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" />
-					<p>my first thing</p>
-					<p>
-						Lorem ipsum is placeholder text commonly used in the graphic,
-						print, and publishing industries for previewing layouts and
-						visual mockups.
-					</p>
-					<p>01/01/2020</p>
-				</li>
-				<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" />
-				<p>my second thing</p>
-				<p>
-					Lorem ipsum is placeholder text commonly used in the graphic,
-					print, and publishing industries for previewing layouts and
-					visual mockups.
-				</p>
-				<p>01/01/2020</p>
-				</li>
-				<li>
-					<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" />
-					<p>my first thing</p>
-					<p>
-						Lorem ipsum is placeholder text commonly used in the graphic,
-						print, and publishing industries for previewing layouts and
-						visual mockups.
-					</p>
-					<p>01/01/2020</p>
-				</li>
-				<img src="https://www.svgrepo.com/show/26996/avatar.svg" alt="alt-avatar" />
-				<p>my second thing</p>
-				<p>
-					Lorem ipsum is placeholder text commonly used in the graphic,
-					print, and publishing industries for previewing layouts and
-					visual mockups.
-				</p>
-				<p>01/01/2020</p>
-				</li>
-			</ul>
+    <section class="body-section">
+      <div class="body-container">
+        <h2 class="body-title">My List</h2>
 
-			<button>Test Now</button>
-		</div>
-	</section>
-</body>
+        <div class="item item1">
+          <img
+            class="body-img body-img1"
+            src="https://www.svgrepo.com/show/26996/avatar.svg"
+            alt="alt-avatar"
+          />
+          <p class="item-title">my first thing</p>
+          <p class="item-body">
+            Lorem ipsum is placeholder text commonly used in the graphic, print,
+            and publishing industries for previewing layouts and visual mockups.
+          </p>
+          <p class="item-date">01/01/2020</p>
+        </div>
+        <div class="item item2">
+          <img
+            class="body-img body-img2"
+            src="https://www.svgrepo.com/show/26996/avatar.svg"
+            alt="alt-avatar"
+          />
+          <p class="item-title">my second thing</p>
+          <p class="item-body">
+            Lorem ipsum is placeholder text commonly used in the graphic, print,
+            and publishing industries for previewing layouts and visual mockups.
+          </p>
+          <p class="item-date">01/01/2020</p>
+        </div>
+        <div class="item item3">
+          <img
+            class="body-img body-img3"
+            src="https://www.svgrepo.com/show/26996/avatar.svg"
+            alt="alt-avatar"
+          />
+          <p class="item-title">my first thing</p>
+          <p class="item-body">
+            Lorem ipsum is placeholder text commonly used in the graphic, print,
+            and publishing industries for previewing layouts and visual mockups.
+          </p>
+          <p class="item-date">01/01/2020</p>
+        </div>
+        <div class="item item4">
+          <img
+            class="body-img body-img4"
+            src="https://www.svgrepo.com/show/26996/avatar.svg"
+            alt="alt-avatar"
+          />
+          <p class="item-title">my second thing</p>
+          <p class="item-body">
+            Lorem ipsum is placeholder text commonly used in the graphic, print,
+            and publishing industries for previewing layouts and visual mockups.
+          </p>
+          <p class="item-date">01/01/2020</p>
+        </div>
+        <div class="item item5">
+          <img
+            class="body-img body-img5"
+            src="https://www.svgrepo.com/show/26996/avatar.svg"
+            alt="alt-avatar"
+          />
+          <p class="item-title">my first thing</p>
+          <p class="item-body">
+            Lorem ipsum is placeholder text commonly used in the graphic, print,
+            and publishing industries for previewing layouts and visual mockups.
+          </p>
+          <p class="item-date">01/01/2020</p>
+        </div>
+        <div class="item item6">
+          <img
+            class="body-img body-img6"
+            src="https://www.svgrepo.com/show/26996/avatar.svg"
+            alt="alt-avatar"
+          />
+          <p class="item-title">my second thing</p>
+          <p class="item-body">
+            Lorem ipsum is placeholder text commonly used in the graphic, print,
+            and publishing industries for previewing layouts and visual mockups.
+          </p>
+          <p class="item-date">01/01/2020</p>
+        </div>
+        <div class="item item7">
+          <img
+            class="body-img body-img7"
+            src="https://www.svgrepo.com/show/26996/avatar.svg"
+            alt="alt-avatar"
+          />
+          <p class="item-title">my first thing</p>
+          <p class="item-body">
+            Lorem ipsum is placeholder text commonly used in the graphic, print,
+            and publishing industries for previewing layouts and visual mockups.
+          </p>
+          <p class="item-date">01/01/2020</p>
+        </div>
+        <div class="item item8">
+          <img
+            class="body-img body-img8"
+            src="https://www.svgrepo.com/show/26996/avatar.svg"
+            alt="alt-avatar"
+          />
+          <p class="item-title">my second thing</p>
+          <p class="item-body">
+            Lorem ipsum is placeholder text commonly used in the graphic, print,
+            and publishing industries for previewing layouts and visual mockups.
+          </p>
+          <p class="item-date">01/01/2020</p>
+        </div>
+
+        <button class="body-btn">Test Now</button>
+      </div>
+    </section>
+  </body>
 </html>
-
