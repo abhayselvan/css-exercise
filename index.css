@@ -127,15 +127,26 @@ code {
 .item {
   display: grid;
   border-radius: 20px;
-  background: linear-gradient(90deg, white 24%, #561f5e 0%);
+  background: #561f5e;
   grid-template-columns: 0.25fr 1fr;
   grid-template-rows: 0.25fr 0.5fr 0.25fr;
   justify-content: center;
   align-items: center;
   grid-template-areas:
-    "body-img item-title"
-    "body-img item-body"
-    "body-img item-date";
+    "img-container item-title"
+    "img-container item-body"
+    "img-container item-date";
+}
+
+.img-container {
+  display: flex;
+  background: white;
+  grid-area: img-container;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .item-title {
@@ -199,12 +210,11 @@ code {
 .body-img {
   width: 100px;
   height: 100px;
-  grid-area: body-img;
   border-radius: 50%;
-  margin: 20px;
+  margin: 10px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 650px) {
   .header-container {
     grid-template-columns: 1fr;
     grid-template-rows: 0.75fr 2fr 1fr 0.75fr;
@@ -234,9 +244,5 @@ code {
   #header-img {
     margin-top: 10px;
     justify-self: center;
-  }
-
-  .body-img {
-    margin: 10px;
   }
 }
